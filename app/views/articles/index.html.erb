@@ -1,7 +1,7 @@
 <h1>Blog Posts</h1>
-<ul id="articles"
+<ul class="articles"
   <% @articles.each do |article| %>
-  <li>
+  <li ="article-box">
     <%= link_to article.title, article_path(article), class: 'article-title' %>
     <%= article.body %>
   </li>
