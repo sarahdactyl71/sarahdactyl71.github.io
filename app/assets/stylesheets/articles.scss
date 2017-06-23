@@ -6,15 +6,20 @@
   font-weight: bold;
 }
 
-.articles {
-  display:flex;
-  flex-wrap: wrap;
-  width:100%;
+.article-container {
+  display: flex;
   padding: 5%;
-  justify-content: space-between;
-  .article-box {
-    max-width: 100%;
-    min-width: 50%;
-    justify-content: center;
-  }
+	flex-wrap: wrap;
+	margin-left: -10px;
+	margin-top: -10px;
+}
+
+.article-container .article-box {
+	flex: 1 0 30%;
+  box-sizing: border-box;
+  background: #e0ddd5;
+  color: #171e42;
+  padding: 10px;
+	margin-left: 10px;
+	margin-top: 10px;
 }
