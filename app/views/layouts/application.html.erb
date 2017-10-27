@@ -8,16 +8,16 @@
   </head>
   <body>
     <header class="main-header">
-        <h1 class="name"><a href="root_path">Sarah Kirk</a></h1>
+        <h1 class="name"><a href="#">Sarah Kirk</a></h1>
         <ul class="main-nav">
             <li><a href="#">ABOUT</a></li>
             <li><a href="https://github.com/sarahdactyl71" target="_blank">GITHUB</a></li>
-            <li><a href="posts_path">BLOG</a></li>
+            <li><%= link_to "BLOG", articles_path %></li>
             <li><a href="#">CONTACT ME</a></li>
         </ul>
     </header><!--/.main-header-->
   <div class="banner">
-        <img class="profile" src=image_url('flatiron.jpg') alt="Picture of Sarah">
+        <img class="profile" src='/assets/sarah_flatiron.jpg' alt="Picture of Sarah">
         <h1 class="headline">Sarah Kirk</h1>
         <span class="tagline">SOFTWARE ENGINEER  | ARTIST | OUTDOOR ENTHUSIAST</span>
     </div><!--/.banner-->
