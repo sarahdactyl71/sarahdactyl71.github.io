@@ -16,7 +16,7 @@ end
 
 describe "a user interacts with social media on landing page" do
 
-  xit "user interacts with linkedin" do
+  it "user interacts with linkedin" do
     visit root_path
     click_on "LinkedIn"
     expect(page.current_url).to eq("https://www.linkedin.com/in/sarahelizabethkirk/")
