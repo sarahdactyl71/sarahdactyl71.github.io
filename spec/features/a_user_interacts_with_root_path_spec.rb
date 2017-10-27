@@ -18,8 +18,8 @@ describe "a user interacts with social media on landing page" do
 
   it "user interacts with linkedin" do
     visit root_path
-    click_on "LinkedIn"
-    expect(page.current_url).to eq("https://www.linkedin.com/in/sarahelizabethkirk/")
+    click_on(class: 'fa-linkedin')
+    expect(current_path).to eq("https://www.linkedin.com/in/sarahelizabethkirk/")
   end
 
   xit "user interacts with twitter" do
@@ -32,6 +32,12 @@ describe "a user interacts with social media on landing page" do
     visit root_path
     click_on "Github"
     expect(page.current_url).to eq("https://github.com/sarahdactyl71")
+  end
+
+  xit "user interacts with instagram" do
+    visit root_path
+    click_on "Instagram"
+    expect(page.current_url).to eq("https://www.instagram.com/sarahdactyl71/?hl=en")
   end
 
 end
