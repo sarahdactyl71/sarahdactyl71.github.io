@@ -2,9 +2,13 @@ RSpec.describe "A user naviagtes to the root path" do
   it "user sees the navbar" do
     visit root_path
     expect(current_path).to eq(about_path)
-    expect(page).to have_content("ABOUT")
-    expect(page).to have_content("WORK")
-    expect(page).to have_content("BLOG")
+    expect(page).to have_css(".main-nav")
+    within(.main-nav) do
+      expect(page).to have_content("ABOUT")
+      expect(page).to have_content("RESUME")
+      expect(page).to have_content("WORK")
+      expect(page).to have_content("BLOG")
+    end
   end
 end
 
