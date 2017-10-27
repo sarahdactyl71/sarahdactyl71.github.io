@@ -1,3 +1,5 @@
+require 'rails_helper'
+
 describe "A user naviagtes to the root path" do
   it "user sees the navbar" do
     visit root_path
