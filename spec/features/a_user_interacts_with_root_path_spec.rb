@@ -1,4 +1,4 @@
-RSpec.describe "A user naviagtes to the root path" do
+describe "A user naviagtes to the root path" do
   it "user sees the navbar" do
     visit root_path
     expect(current_path).to eq(about_path)
@@ -12,7 +12,7 @@ RSpec.describe "A user naviagtes to the root path" do
   end
 end
 
-RSpec.describe "a user interacts with social media on landing page" do
+describe "a user interacts with social media on landing page" do
 
   it "user interacts with linkedin" do
     visit root_path
