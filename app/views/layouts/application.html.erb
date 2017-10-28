@@ -7,28 +7,12 @@
     <%= javascript_include_tag 'application' %>
   </head>
   <body>
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="#">SARAH KIRK</a>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">ABOUT <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">RESUME</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">WORK</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">BLOG</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <ul>
+      <li><a href="default.asp">ABOUT</a></li>
+      <li><a href="news.asp">RESUME</a></li>
+      <li><a href="contact.asp">WORK</a></li>
+      <li><a href="about.asp">BLOG</a></li>
+    </ul>
     <%= yield %>
   </body>
 </html>
