@@ -1,3 +1,3 @@
-This is a persona website for Sarah Kirk
+This is a personal website for Sarah Kirk
 
-I never stopped loving dinosaurs. 
+I never stopped loving dinosaurs.
